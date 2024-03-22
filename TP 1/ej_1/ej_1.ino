@@ -22,5 +22,8 @@ void loop()
   oled.clearBuffer();
 
   oled.setFont(u8g2_font_ncenB14_tr);
-  oled.drawStr(15,15, "Hola Mundo");
+  oled.drawStr(0,15, "Hola Mundo");
+  oled.sendBuffer();
+  Serial.println("Hola mundo");
+  delay(2000);
 }
